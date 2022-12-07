@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Photo Generator</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-zinc-900">
+    <main class="container mx-auto text-white mt-6">
+        <h1 class="text-center text-5xl font-bold">AI Photo Generator</h1>
+
+        <div id="result" class="flex items-center justify-center my-5 text-center font-bold text-3xl text-emerald-400" style="letter-spacing: 3px;">
+            <div class="img-container flex items-center justify-center border-solid border-2 border-stone-100">
+                Image will appear here!
+            </div>
+        </div>
+
+        <form class="flex flex-col justify-center">
+            <label for="prompt" class="text-center">Enter a phrase</label>
+            <textarea name="prompt" maxlength="160" class="bg-zinc-900 border-solid border-2 border-emerald-500 mt-2 px-3 py-2"></textarea>
+            <button type="submit" class="bg-emerald-500 hover:bg-emerald-700 py-3 font-bold text-2xl mt-2 transition-all text-zinc-900">Dream!</button>
+        </form>
+
+        <p class="mt-4 text-center text-gray-500">
+            Made by: 
+            <a href="https://github.com/eduardosgn" target="_blank" class="text-emerald-400 hover:text-emerald-700">
+                Eduardo Nascimento
+            </a>
+        </p>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
