@@ -11,3 +11,13 @@ html, body {
     width: 32rem;
     height: 32rem;
 }
+
+.spinner {
+    animation: spinner 1s alternate infinite;
+    display: inline-block;
+}
+
+@keyframes spinner {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
