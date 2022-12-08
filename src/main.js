@@ -1,4 +1,4 @@
-import './style.css';
+import './build.css';
 
 const form = document.querySelector('form');
 const textarea = document.querySelector('textarea');
